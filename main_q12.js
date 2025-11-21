@@ -3,12 +3,12 @@ function Prom()
     return new Promise ((resolve, reject)=>{
 
         setTimeout(()=>{
-           resolve("Valid")
+           resolve("Success")
 
         }, 3000);
 
     })
 }
-Prom().then(()=>{
-    console.log("Success");
+Prom().then((result)=>{
+    console.log(result);
 })
